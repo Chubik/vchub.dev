@@ -1,1 +1,15 @@
-access denied
+<html>
+   <head>
+      <script type="text/javascript" src="jquery.min.js"></script>
+   </head>
+<body>
+<script type = "text/javascript" language = "javascript">
+      $.get("https://yearprogress-api.herokuapp.com/", function(data, status){
+                     console.log(data)
+                     $('#stage').html(data.str);
+                     $('#percent').html(data.percent);
+      });
+</script> 
+Year Progress: <span id = "percent"></span>% <span id = "stage"></span>
+ </body>
+</html>
