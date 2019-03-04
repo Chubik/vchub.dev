@@ -11,6 +11,12 @@
                      $('#percent').html(data.percent);
       });
 </script> 
+<span id = "time"></span> root@github.local<br>
+
 Year Progress: <span id = "percent"></span>% <span id = "stage"></span>
  </body>
 </html>
+<script>
+      var dt = new Date();
+      document.getElementById("time").innerHTML = dt.toLocaleTimeString();
+</script>
