@@ -1,26 +1,30 @@
 <html>
-   <head>
-      <script type="text/javascript" src="jquery.min.js"></script>
-      <link rel="stylesheet" href="styles.css">
-   </head>
-   <body>
-      <script type = "text/javascript" language = "javascript">
-         $.get("https://yearprogress-api.herokuapp.com/", function(data, status){
-                     $('#stage').html(data.str);
-                     $('#percent').html(data.percent);
-         });
-      </script> 
-      <span id = "time"></span> root@github.local ./yearprogress
-      <br> 
-      Year Progress: <span id = "percent"></span>% <span id = "stage"></span>
-      <p>      
-         api: <a style="text-decoration:none; color : #fff;" target=_new href="https://yearprogress-api.herokuapp.com/">https://yearprogress-api.herokuapp.com</a>
-         <br> 
-         email: mail[]vchub.dev
-      </p>
-   </body>
+
+<head>
+   <script type="text/javascript" src="jquery.min.js"></script>
+   <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+   <script type="text/javascript" language="javascript">
+      $.get("http://128.140.56.178:8085", function (data, status) {
+         $('#stage').html(data.str);
+         $('#percent').html(data.percent);
+      });
+   </script>
+   <span id="time"></span> root@github.local ./yearprogress
+   <br>
+   Year Progress: <span id="percent"></span>% <span id="stage"></span>
+   <p>
+      api: <a style="text-decoration:none; color : #fff;" target=_new
+         href="https://yearprogress-api.herokuapp.com/">https://yearprogress-api.herokuapp.com</a>
+      <br>
+      email: mail[]vchub.dev
+   </p>
+</body>
+
 </html>
 <script>
-      var dt = new Date()
-      document.getElementById("time").innerHTML = dt.toLocaleTimeString();
+   var dt = new Date()
+   document.getElementById("time").innerHTML = dt.toLocaleTimeString();
 </script>
