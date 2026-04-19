@@ -1,0 +1,9 @@
+# editors
+.vscode/
+
+# claude files
+.claude
+
+# build tooling / assets (screenshots not used in final site)
+assets/
+scripts/

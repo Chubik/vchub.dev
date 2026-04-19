@@ -1,30 +1,93 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vchub.dev</title>
+    <meta
+      name="description"
+      content="Projects by vchub -- subscription tracker, fitness, cyber dashboard, broken link checker, and more."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="rule">+====================================================================================================================================+</div>
+      <header class="header-bar">
+        <span class="brand">vchub.dev</span>
+        <span class="email" id="email">&#109;&#97;&#105;&#108;&#64;&#118;&#99;&#104;&#117;&#98;&#46;&#100;&#101;&#118;</span>
+      </header>
+      <div class="rule">+====================================================================================================================================+</div>
 
-<head>
-   <script type="text/javascript" src="jquery.min.js"></script>
-   <link rel="stylesheet" href="styles.css">
-</head>
+      <main>
+        <h1 class="title">// projects i'm working on</h1>
+        <section class="list" aria-label="Projects">
+        <article class="item">
+          <header class="item-head">
+            <span class="name">SubTick</span>
+            <span class="status live">[ LIVE ]</span>
+          </header>
+          <p class="desc">Subscription tracker for the subscriptions you keep forgetting. Track renewals, monthly and yearly totals, category breakdowns, and get reminders before each charge. Web + Android, iOS coming soon.</p>
+          <div class="meta"><span class="arrow">--&gt;</span> <a href="https://subtick.net" target="_blank" rel="noopener">subtick.net</a></div>
+        </article>
+        <article class="item">
+          <header class="item-head">
+            <span class="name">Phity</span>
+            <span class="status beta">[ BETA ]</span>
+          </header>
+          <p class="desc">Minimalist fitness app focused on short, 5-minute personalized workouts with rule-based adaptation. Built for people with sedentary lifestyles who want to move daily without excuses.</p>
+          <div class="meta"><span class="domain empty">-- not public</span></div>
+        </article>
+        <article class="item">
+          <header class="item-head">
+            <span class="name">CybDash</span>
+            <span class="status beta">[ BETA ]</span>
+          </header>
+          <p class="desc">Real-time cyber threat intelligence dashboard. Aggregates CVEs ranked by EPSS, KEV and ransomware badges, multi-source exploit confirmation, cyber news digest, and MITRE ATT&CK attack chains.</p>
+          <div class="meta"><span class="arrow">--&gt;</span> <a href="https://cybdash.com" target="_blank" rel="noopener">cybdash.com</a></div>
+        </article>
+        <article class="item">
+          <header class="item-head">
+            <span class="name">TrendRadar</span>
+            <span class="status live">[ LIVE ]</span>
+          </header>
+          <p class="desc">Automated scanner of unmet demand across the internet. Collects pain-point signals from Reddit, Hacker News, ProductHunt, Twitter, Quora, and Indie Hackers, then uses a local LLM to extract and rank product ideas.</p>
+          <div class="meta"><span class="arrow">--&gt;</span> <a href="https://trend.vchub.net" target="_blank" rel="noopener">trend.vchub.net</a></div>
+        </article>
+        <article class="item">
+          <header class="item-head">
+            <span class="name">Astroscient</span>
+            <span class="status dev">[ DEV ]</span>
+          </header>
+          <p class="desc">Science-based astrology decision-support system. Combines Swiss Ephemeris computations with an LLM pipeline to provide natal charts, transits, aspects, and daily energy / focus / risk scoring.</p>
+          <div class="meta"><span class="arrow">--&gt;</span> <a href="https://astroscient.com" target="_blank" rel="noopener">astroscient.com</a></div>
+        </article>
+        <article class="item">
+          <header class="item-head">
+            <span class="name">DiffAlarm</span>
+            <span class="status testing">[ TESTING ]</span>
+          </header>
+          <p class="desc">Broken link checker for small and medium businesses. Crawls every page, checks every link, and sends scheduled email reports. No more lost leads to silent 404s.</p>
+          <div class="meta"><span class="arrow">--&gt;</span> <a href="https://diffalarm.com" target="_blank" rel="noopener">diffalarm.com</a></div>
+        </article>
+        <article class="item">
+          <header class="item-head">
+            <span class="name">RedMimic</span>
+            <span class="status research">[ RESEARCH ]</span>
+          </header>
+          <p class="desc">Concept for automated, affordable pentest-as-a-service targeting SMBs -- a segment where 99% of EU companies cite limited funds, fragmented tools, and skill shortages for cybersecurity. Market research phase.</p>
+          <div class="meta"><span class="domain empty">-- not public</span></div>
+        </article>
+        </section>
+      </main>
 
-<body>
-   <script type="text/javascript" language="javascript">
-      $.get("https://yearprogress.vchub.net", function (data, status) {
-         $('#stage').html(data.str);
-         $('#percent').html(data.percent);
-      });
-   </script>
-   <span id="time"></span> root@github.local ./yearprogress
-   <br>
-   Year Progress: <span id="percent"></span>% <span id="stage"></span>
-   <p>
-      api: <a style="text-decoration:none; color : #fff;" target=_new
-         href="https://yearprogress.vchub.net">https://yearprogress.vchub.net</a>
-      <br>
-      email: valentyn.chub[]gmail.com
-   </p>
-</body>
+      <div class="rule" style="margin-top:48px">+====================================================================================================================================+</div>
+    </div>
 
+    <script src="main.js" defer></script>
+  </body>
 </html>
-<script>
-   var dt = new Date()
-   document.getElementById("time").innerHTML = dt.toLocaleTimeString();
-</script>
