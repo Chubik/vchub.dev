@@ -4,6 +4,9 @@
 # claude files
 .claude
 
-# build tooling / assets (screenshots not used in final site)
-assets/
+# build tooling
 scripts/
+
+# source assets (only optimized screenshots are published)
+assets/ascii/
+assets/screenshots/*.png

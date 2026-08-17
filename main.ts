@@ -1,19 +1,17 @@
 const EMAIL_USER = "mail";
 const EMAIL_DOMAIN = "vchub.dev";
+const EMAIL_TARGETS = ["email", "email-cta", "email-footer"];
 
 function buildEmail(): string {
   return `${EMAIL_USER}@${EMAIL_DOMAIN}`;
 }
 
 function mountEmail(): void {
-  const el = document.getElementById("email");
-  if (!el) return;
   const addr = buildEmail();
-  const link = document.createElement("a");
-  link.href = `mailto:${addr}`;
-  link.textContent = addr;
-  link.className = "email-link";
-  el.replaceChildren(link);
+  for (const id of EMAIL_TARGETS) {
+    const el = document.getElementById(id);
+    if (el instanceof HTMLAnchorElement) el.href = `mailto:${addr}`;
+  }
 }
 
 document.addEventListener("DOMContentLoaded", mountEmail);

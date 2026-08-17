@@ -6,54 +6,184 @@
     <title>vchub.dev</title>
     <meta
       name="description"
-      content="Projects by vchub -- subscription tracker, cyber threat dashboard, and broken link checker."
+      content="Independent developer building and shipping own products — web, Android, macOS and the terminal."
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="page">
-      <div class="rule">+====================================================================================================================================+</div>
-      <header class="header-bar">
-        <span class="brand">vchub.dev</span>
-        <span class="email" id="email">&#109;&#97;&#105;&#108;&#64;&#118;&#99;&#104;&#117;&#98;&#46;&#100;&#101;&#118;</span>
-      </header>
-      <div class="rule">+====================================================================================================================================+</div>
+      <div class="shell">
+        <header class="topbar">
+          <span class="brand">vchub.dev</span>
+          <a class="topbar-mail" id="email" href="#">&#109;&#97;&#105;&#108;&#64;&#118;&#99;&#104;&#117;&#98;&#46;&#100;&#101;&#118;</a>
+        </header>
 
-      <main>
-        <h1 class="title">// projects i'm working on</h1>
-        <section class="list" aria-label="Projects">
-        <article class="item">
-          <header class="item-head">
-            <span class="name">SubTick</span>
-            <span class="status live">[ LIVE ]</span>
-          </header>
-          <p class="desc">Subscription tracker for the subscriptions you keep forgetting. Track renewals, monthly and yearly totals, category breakdowns, and get reminders before each charge. Web + Android, iOS coming soon.</p>
-          <div class="meta"><span class="arrow">--&gt;</span> <a href="https://subtick.net" target="_blank" rel="noopener">subtick.net</a></div>
-        </article>
-        <article class="item">
-          <header class="item-head">
-            <span class="name">CybDash</span>
-            <span class="status beta">[ BETA ]</span>
-          </header>
-          <p class="desc">Real-time cyber threat intelligence dashboard. Aggregates CVEs ranked by EPSS, KEV and ransomware badges, multi-source exploit confirmation, cyber news digest, and MITRE ATT&CK attack chains.</p>
-          <div class="meta"><span class="arrow">--&gt;</span> <a href="https://cybdash.com" target="_blank" rel="noopener">cybdash.com</a></div>
-        </article>
-        <article class="item">
-          <header class="item-head">
-            <span class="name">DiffAlarm</span>
-            <span class="status testing">[ TESTING ]</span>
-          </header>
-          <p class="desc">Broken link checker for small and medium businesses. Crawls every page, checks every link, and sends scheduled email reports. No more lost leads to silent 404s.</p>
-          <div class="meta"><span class="arrow">--&gt;</span> <a href="https://diffalarm.com" target="_blank" rel="noopener">diffalarm.com</a></div>
-        </article>
+        <section class="hero">
+          <h1>I design, build and ship my own products.</h1>
+          <div class="hero-body">
+            <p class="lede">
+              Independent developer working end to end — web apps, Android, macOS and the terminal.
+              Six products are live and in use today; one more is in development.
+            </p>
+            <ul class="facts">
+              <li><span class="num">06</span><span>shipped and running in production</span></li>
+              <li><span class="num">01</span><span>in active development</span></li>
+              <li><span class="num">04</span><span>platforms: web, android, macos, cli</span></li>
+            </ul>
+          </div>
+          <div class="cta">
+            <a class="btn btn-primary" id="email-cta" href="#">get in touch &rarr;</a>
+            <a class="btn btn-ghost" href="#work">see the work &darr;</a>
+          </div>
         </section>
-      </main>
 
-      <div class="rule" style="margin-top:48px">+====================================================================================================================================+</div>
+        <div class="section-head" id="work">
+          <span class="section-title">// selected work</span>
+          <span class="section-line"></span>
+          <span>2026</span>
+        </div>
+
+        <section class="work">
+          <article class="project">
+            <div class="project-body">
+              <div class="project-meta">
+                <span>01</span>
+                <span class="tag tag-live">live</span>
+                <span>web &middot; android</span>
+              </div>
+              <h2>SubTick</h2>
+              <p>
+                Subscription tracker for the subscriptions you keep forgetting. Track renewals,
+                monthly and yearly totals, category breakdowns, and get reminders before each
+                charge. Web + Android, iOS coming soon.
+              </p>
+              <a class="project-link" href="https://subtick.net" target="_blank" rel="noopener">subtick.net &#8599;</a>
+            </div>
+            <div class="shot">
+              <img src="assets/screenshots/subtick.webp" alt="SubTick screenshot" loading="lazy" decoding="async" width="1440" height="787" />
+            </div>
+          </article>
+
+          <article class="project project-reverse">
+            <div class="shot">
+              <img src="assets/screenshots/skipintro.webp" alt="skipintro screenshot" loading="lazy" decoding="async" width="1440" height="787" />
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>02</span>
+                <span class="tag tag-live">live</span>
+                <span>web &middot; pwa</span>
+              </div>
+              <h2>skipintro</h2>
+              <p>
+                Track the TV series, movies and anime you are watching — what is next, what is
+                finished, what you dropped. Installable on the phone, works like an app.
+              </p>
+              <a class="project-link" href="https://skipintro.live" target="_blank" rel="noopener">skipintro.live &#8599;</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-body">
+              <div class="project-meta">
+                <span>03</span>
+                <span class="tag tag-testing">testing</span>
+                <span>web</span>
+              </div>
+              <h2>DiffAlarm</h2>
+              <p>
+                Broken link checker for small and medium businesses. Crawls every page, checks every
+                link, and sends scheduled email reports. No more lost leads to silent 404s.
+              </p>
+              <a class="project-link" href="https://diffalarm.com" target="_blank" rel="noopener">diffalarm.com &#8599;</a>
+            </div>
+            <div class="shot">
+              <img src="assets/screenshots/diffalarm.webp" alt="DiffAlarm screenshot" loading="lazy" decoding="async" width="1440" height="733" />
+            </div>
+          </article>
+
+          <article class="project project-reverse">
+            <div class="shot">
+              <img src="assets/screenshots/r4dio.webp" alt="r4dio screenshot" loading="lazy" decoding="async" width="1440" height="787" />
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>04</span>
+                <span class="tag tag-live">live</span>
+                <span>cli &middot; macos &middot; android</span>
+              </div>
+              <h2>r4dio</h2>
+              <p>
+                A keyboard-driven internet radio player that lives in your shell. 56,000+ live
+                stations, a real-time spectrum analyzer drawn in text, 14 retro palettes. Written in
+                Rust, open source under MIT, with macOS and Android apps alongside the terminal
+                build.
+              </p>
+              <a class="project-link" href="https://r4dio.net" target="_blank" rel="noopener">r4dio.net &#8599;</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-body">
+              <div class="project-meta">
+                <span>05</span>
+                <span class="tag tag-beta">beta</span>
+                <span>web</span>
+              </div>
+              <h2>CybDash</h2>
+              <p>
+                Real-time cyber threat intelligence dashboard. Aggregates CVEs ranked by EPSS, KEV
+                and ransomware badges, multi-source exploit confirmation, cyber news digest, and
+                MITRE ATT&amp;CK attack chains.
+              </p>
+              <a class="project-link" href="https://cybdash.com" target="_blank" rel="noopener">cybdash.com &#8599;</a>
+            </div>
+            <div class="shot">
+              <img src="assets/screenshots/cybdash.webp" alt="CybDash screenshot" loading="lazy" decoding="async" width="1440" height="787" />
+            </div>
+          </article>
+
+          <article class="project project-reverse">
+            <div class="shot">
+              <img src="assets/screenshots/preferans.webp" alt="Preferans screenshot" loading="lazy" decoding="async" width="1440" height="787" />
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>06</span>
+                <span class="tag tag-live">live</span>
+                <span>web</span>
+              </div>
+              <h2>Preferans</h2>
+              <p>
+                The classic three-player card game, rebuilt for the modern browser. Play against
+                bots, no install and no account needed.
+              </p>
+              <a class="project-link" href="https://preferans.live" target="_blank" rel="noopener">preferans.live &#8599;</a>
+            </div>
+          </article>
+
+          <article class="project-slim">
+            <span class="slim-num">07</span>
+            <h2>netdeck</h2>
+            <span class="tag tag-dev">in development</span>
+            <span class="slim-domain">netdeck.net</span>
+          </article>
+        </section>
+
+        <footer>
+          <div class="footer-contact">
+            <span class="footer-label">Building something? Let's talk.</span>
+            <a class="footer-mail" id="email-footer" href="#">&#109;&#97;&#105;&#108;&#64;&#118;&#99;&#104;&#117;&#98;&#46;&#100;&#101;&#118;</a>
+          </div>
+          <span>&copy; 2026 vchub.dev</span>
+        </footer>
+      </div>
     </div>
 
     <script src="main.js" defer></script>
