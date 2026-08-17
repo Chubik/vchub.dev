@@ -368,6 +368,12 @@ footer {
   font-size: 13px;
 }
 
+.copyright .mark {
+  font-family: var(--sans);
+  font-size: 13px;
+  vertical-align: -0.05em;
+}
+
 .footer-mail {
   font-family: var(--sans);
   font-size: clamp(17px, 1.9vw, 22px);
