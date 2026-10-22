@@ -265,12 +265,6 @@ img {
   color: var(--bg);
 }
 
-.tag-testing {
-  border: 1px solid var(--accent);
-  color: var(--accent);
-  padding: 3px 8px;
-}
-
 .tag-beta {
   border: 1px solid var(--border);
   color: var(--muted);
