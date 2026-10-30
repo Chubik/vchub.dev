@@ -207,6 +207,10 @@ img {
   border-bottom: 1px solid var(--line-soft);
 }
 
+.project:last-child {
+  border-bottom: none;
+}
+
 .project-body {
   display: flex;
   flex-direction: column;
@@ -301,7 +305,6 @@ img {
 /* footer */
 footer {
   margin-top: clamp(48px, 7vw, 96px);
-  border-top: 1px solid var(--line);
   padding: 34px 0 48px;
   display: flex;
   flex-wrap: wrap;
