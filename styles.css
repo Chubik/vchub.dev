@@ -179,7 +179,6 @@ img {
   align-items: center;
   gap: 16px;
   padding-bottom: 18px;
-  border-bottom: 1px solid var(--line);
   font-family: var(--mono);
   font-size: 12px;
   letter-spacing: 0.08em;
